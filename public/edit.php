@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1>✏️ Edit Produk</h1>
 
         <p class="subtitle">
-            Perbarui informasi produk.
+            perbarui informasi produk.
         </p>
 
         <?php if ($error): ?>

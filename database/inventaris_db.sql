@@ -2,17 +2,11 @@ CREATE DATABASE IF NOT EXISTS inventaris_db;
 
 USE inventaris_db;
 
--- =========================
--- TABEL KATEGORI
--- =========================
 CREATE TABLE kategori (
     id_kategori INT AUTO_INCREMENT PRIMARY KEY,
     nama_kategori VARCHAR(100) NOT NULL
 );
 
--- =========================
--- TABEL SUPPLIER
--- =========================
 CREATE TABLE supplier (
     id_supplier INT AUTO_INCREMENT PRIMARY KEY,
     nama_supplier VARCHAR(100) NOT NULL,
@@ -20,9 +14,6 @@ CREATE TABLE supplier (
     alamat TEXT
 );
 
--- =========================
--- TABEL PRODUK
--- =========================
 CREATE TABLE produk (
     id_produk INT AUTO_INCREMENT PRIMARY KEY,
     nama_produk VARCHAR(150) NOT NULL,
@@ -44,9 +35,6 @@ CREATE TABLE produk (
         ON DELETE RESTRICT
 );
 
--- =========================
--- DATA KATEGORI
--- =========================
 INSERT INTO kategori (nama_kategori) VALUES
 ('Laptop'),
 ('Aksesoris'),
@@ -54,9 +42,7 @@ INSERT INTO kategori (nama_kategori) VALUES
 ('Peralatan Kantor'),
 ('Komponen Komputer');
 
--- =========================
--- DATA SUPPLIER
--- =========================
+
 INSERT INTO supplier (nama_supplier, kontak, alamat) VALUES
 ('PT Teknologi Nusantara', '081234567890', 'Medan'),
 ('CV Komputer Jaya', '081298765432', 'Medan'),
@@ -64,9 +50,7 @@ INSERT INTO supplier (nama_supplier, kontak, alamat) VALUES
 ('CV Sumber Elektronik', '085677889900', 'Bandung'),
 ('PT Mitra Komputer', '081355667788', 'Surabaya');
 
--- =========================
--- DATA PRODUK
--- =========================
+
 INSERT INTO produk
 (nama_produk, harga, stok, id_kategori, id_supplier)
 VALUES

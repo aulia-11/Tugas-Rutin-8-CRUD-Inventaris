@@ -15,7 +15,7 @@ class Produk
     public function getAll()
     {
         $query = "
-            SELECT
+           SELECT
                 produk.id_produk,
                 produk.nama_produk,
                 produk.harga,

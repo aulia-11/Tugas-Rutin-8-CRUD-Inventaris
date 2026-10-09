@@ -32,9 +32,6 @@ h1 {
     margin-bottom: 25px;
 }
 
-/* =========================
-   BUTTON
-========================= */
 
 .btn-tambah {
     display: inline-block;
@@ -52,9 +49,6 @@ h1 {
     background: #1d4ed8;
 }
 
-/* =========================
-   TABLE
-========================= */
 
 .table-container {
     width: 100%;
@@ -99,9 +93,6 @@ td a:last-child {
     color: #dc2626;
 }
 
-/* =========================
-   FORM
-========================= */
 
 .form-group {
     margin-bottom: 18px;
@@ -131,9 +122,6 @@ td a:last-child {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-/* =========================
-   FORM BUTTON
-========================= */
 
 .form-actions {
     display: flex;
@@ -170,9 +158,6 @@ td a:last-child {
     background: #475569;
 }
 
-/* =========================
-   ALERT / FLASH MESSAGE
-========================= */
 
 .alert {
     padding: 13px 16px;
@@ -193,9 +178,6 @@ td a:last-child {
     border: 1px solid #fecaca;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 768px) {
 

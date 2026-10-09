@@ -13,7 +13,7 @@ $produkModel = new Produk();
 
 $berhasil = $produkModel->delete($id);
 
-if ($berhasil) {
+if($berhasil) {
 
     header(
         "Location: index.php?status=success&message=Produk berhasil dihapus."
